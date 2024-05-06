@@ -48,4 +48,17 @@ return {
       vim.g.rustfmt_autosave = 1
     end,
   },
+
+  {
+    "nvim-lua/plenary.nvim"
+  },
+
+  {
+    "akinsho/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = true,
+  }
 }
