@@ -20,11 +20,11 @@ end, { desc = "Go to definition"})
 
 map("n", "gr", function()
   vim.lsp.buf.references()
-end, { desc = "Go to definition"})
+end, { desc = "View references"})
 
 map("n", "K", function()
   vim.lsp.buf.hover()
-end, { desc = "Go to definition"})
+end, { desc = "View docs"})
 
 map("n", "<leader>ra", function()
   vim.lsp.buf.rename()
