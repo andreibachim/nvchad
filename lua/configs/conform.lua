@@ -6,9 +6,8 @@ local options = {
     dart = { "dart_format" },
   },
 
-  format_on_save = {
-    lsp_fallback = true,
-    timeout_ms = 500,
+  format_after_save = {
+    lsp_fallback = "always",
   }
 }
 

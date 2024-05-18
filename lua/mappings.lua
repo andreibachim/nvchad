@@ -22,10 +22,14 @@ map("n", "gr", function()
   vim.lsp.buf.references()
 end, { desc = "Go to definition"})
 
-
 map("n", "K", function()
   vim.lsp.buf.hover()
 end, { desc = "Go to definition"})
+
+map("n", "<leader>ra", function()
+  vim.lsp.buf.rename()
+end, { desc = "LSP rename"})
+
 
 
 map("i", "jk", "<ESC>", { desc = "Escape insert mode" })
